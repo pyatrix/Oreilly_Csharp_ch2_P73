@@ -1,0 +1,29 @@
+﻿<Window x:Class="UseTheDebugger.MainPage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:UseTheDebugger"
+        mc:Ignorable="d"
+        Title="MainPage" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Button x:Name="button1" Content="Show a message" HorizontalAlignment="Center" Margin="0" VerticalAlignment="Center" Width="150" Click="Button1_Click"/>
+        <Button x:Name="button2" Content="Another conditional test" Grid.Column="1" HorizontalAlignment="Center" Margin="0" VerticalAlignment="Center" Width="150" Click="Button3_Click"/>
+        <Button x:Name="button3" Content="If/else" HorizontalAlignment="Center" Margin="0" Grid.Row="1" VerticalAlignment="Center" Width="150" Click="Button2_Click"/>
+        <Button x:Name="button4" Content="A Loop" Grid.Column="1" HorizontalAlignment="Center" Margin="0" Grid.Row="1" VerticalAlignment="Center" Width="150" Click="Button4_Click"/>
+        <TextBlock x:Name="myLabel" HorizontalAlignment="Center" Margin="0" Grid.Row="2" TextWrapping="Wrap" VerticalAlignment="Center" Grid.ColumnSpan="2" Width="250" Height="50"/>
+        <Button x:Name="chanceText" Content="Change the label if checked" HorizontalAlignment="Left" Margin="30,45,0,0" Grid.Row="2" VerticalAlignment="Top" Width="210" Height="30" Click="EnableCheckbox_Click"/>
+        <CheckBox x:Name="enableCheckbox" Content="Enable label changeing" HorizontalAlignment="Left" Margin="30,10,0,0" Grid.Row="2" VerticalAlignment="Top" Height="20" Width="210" Background="#FFF4F4F4" FontWeight="Bold"/>
+        <TextBlock x:Name="labelToChange" Margin="30,95,0,0" Grid.Row="2" TextWrapping="Wrap" Width="210" Height="20" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>
